@@ -17,8 +17,8 @@ height = 300
 width = 600
 dimensoes = (width, height)
 
-imagem_dark = pygame.image.load#(caminho_da_imagem_da_lua)
-imagem_light = pygame.image.load#(caminho_da_imagem_do_sol)
+imagem_dark = pygame.image.load("Temperatura/imagens/moon.png")
+imagem_light = pygame.image.load("Temperatura/imagens/sun.png")
 
 clock = pygame.time.Clock()
 
