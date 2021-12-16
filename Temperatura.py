@@ -17,8 +17,12 @@ height = 300
 width = 600
 dimensoes = (width, height)
 
-imagem_dark = pygame.image.load("moon.png")
-imagem_light = pygame.image.load("sun.png")
+source = "/home/joao/Arquivos/Temperatura/"
+
+imagem_dark = pygame.image.load(source + "moon.png")
+imagem_light = pygame.image.load(source + "sun.png")
+icon = pygame.image.load(source + "temperatura.png")
+
 
 clock = pygame.time.Clock()
 
@@ -26,7 +30,7 @@ fonte = pygame.font.SysFont("hack", 50)
 tela = pygame.display.set_mode((dimensoes))
 
 pygame.display.set_caption("Temperatura")
-
+pygame.display.set_icon(icon)
 
 def comandos(mouse, width, height, cor_fundo):
     for event in pygame.event.get():
