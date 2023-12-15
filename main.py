@@ -1,4 +1,8 @@
 import pygame  # importa a biblioteca Pygame
+import os
+
+absolutePath = os.path.dirname(__file__)
+assetsPath = absolutePath + "/assets"
 
 pygame.init()
 
@@ -17,12 +21,9 @@ height = 300
 width = 600
 dimensoes = (width, height)
 
-source = "/home/joao/Arquivos/Temperatura/"
-
-imagem_dark = pygame.image.load(source + "moon.png")
-imagem_light = pygame.image.load(source + "sun.png")
-icon = pygame.image.load(source + "temperatura.png")
-
+imagem_dark = pygame.image.load(assetsPath + "/moon.png")
+imagem_light = pygame.image.load(assetsPath + "/sun.png")
+icon = pygame.image.load(assetsPath + "/temp.png")
 
 clock = pygame.time.Clock()
 
